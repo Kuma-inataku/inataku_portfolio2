@@ -2,7 +2,7 @@
   <div>
    <!-- ここからVue-carousel -->
     <div id="app">
-      <carousel class="top-carousel" autoplay="true" loop="true" speed="2000" per-page="1" autoplayTimeout="4500" :pagination-enabled="false">
+      <carousel autoplay="true" :autoplay-hoverpause="false" loop="true" speed="2000" :per-page="1" autoplayTimeout="4500" :pagination-enabled="false">
         <slide>
           <img src="static/images/top_image3.jpg" alt="" width="100%" max-width="1000px" height="800px">
         </slide>
@@ -21,59 +21,22 @@
           <p>J-Rockのあらゆる「困った」を即解決！</p>
         </div>
       </div>
-    <div class="container">
-        <h3>フリーワード検索</h3>
-      <div class="t-c-search">
-        <form action="">
-          <input type="text" class="t-word-search" placeholder="" name="freeword">
-        </form>
-      <router-link to="/page2" class="router">
-        <button type="submit" class="t-word-submit">検索</button>
-      </router-link>
-      </div>
-      <!-- <router-link to="/page3" class="router">DEATAIL</router-link> -->
-      <div class="t-other_search">
-        <div class="t-main">
-          <h3>カテゴリ検索</h3>
-          <ul class="t-m-category">
-            <li>
-              <a href="">フェス 初心者</a>
-            </li>
-            <li>
-              <a href="">ライブハウス 初心者</a>
-            </li>
-            <li>
-              <a href="">フェス 注意点</a>
-            </li>
-            <li>
-              <a href="">ツーステ</a>
-            </li>
-            <li>
-              <a href="">ROCKIN'ON JAPAN</a>
-            </li>
-            <li>
-              <a href="">日本の米は世界一</a>
-            </li>
-          </ul>
+      <div class="select">
+        <div class="select-menu">
+          <router-link to="/page2" class="router">
+           GO TO SEARCH⇒
+          </router-link>
         </div>
-        <div class="t-side">
-          <h3>「めっちゃE」ランキング検索</h3>
-          <ul class="t-s-search">
-            <li class="ranking_1">
-              <a href="#">【失敗しない！】初心者必見！フェスに持っていくもの10選！
-              </a>
-            </li>
-            <li class="ranking_2">
-              <a href="#"> 【これだけ気を付けよう！】フェスを楽しむための注意点3選！</a>
-            </li>
-            <li class="ranking_3">
-              <a href="#">【完全攻略！】初心者邦ロックロードマップ！</a>
-            </li>
-          </ul>
+        <div class="select-submenu">
+          <div class="select-about">
+            <p>ABOUT</p>
+          </div>
+          <div class="select-contact">
+            <p>CONTACT</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -107,8 +70,8 @@ export default {
 }
 .subtitle{
   position: absolute;
-  top: 60%;
-  left: 5%;
+  bottom: 150px;
+  left: 50px;
   width: 350px;
   height: 100px;
   background-color:rgba(255,255,255,0.7);
@@ -116,14 +79,58 @@ export default {
 .subtitle-comment{
   background-color:rgba(255,255,255,0.7);
   position: absolute;
-  top: 75%;
-  left: 15%;
-  -webkit-transform : translate(-10%,-60%);
-  transform : translate(-10%,-60%);
+  top: 20px;
+  left: 20px;
   width: 350px;
   height: 100px;
   text-align: center;/*一応BOX内の文字も中央寄せ*/
 }
+.select{
+  position: absolute;
+  bottom: 80px;
+  left:900px;
+  width: 500px;
+  background-color:rgba(255,255,255,0.7);
+}
+.select-menu{
+  display: table;
+  width: 100%;
+  background-color:rgba(255,255,255,0.7);
+  width: 250px;
+  height: 50px;
+  margin:0 auto;
+  margin-top:10px;
+}
+.select-submenu{
+  display: flex;
+  justify-content: space-around;
+  margin:20px 0;
+}
+.select-about{
+  display: table;
+  width: 100%;
+}
+
+.select-about p{
+  width:px;
+  height: 50px;
+  background:yellow;
+  display: table-cell;
+  vertical-align: middle;
+}
+.select-contact{
+  display: table;
+  width:100%;
+}
+
+.select-contact p{
+  width: 100px;
+  height: 50px;
+  background: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* ここからフリーワード検索 */
 .t-c-search{
   border-bottom: 2px solid #ccc;
