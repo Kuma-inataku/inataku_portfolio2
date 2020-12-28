@@ -29,10 +29,14 @@
         </div>
         <div class="select-submenu">
           <div class="select-about">
-            <p>ABOUT</p>
+          <router-link to="/About" class="select-about">
+           <p>ABOUT</p>
+          </router-link>
           </div>
           <div class="select-contact">
-            <p>CONTACT</p>
+          <router-link to="/Contact" class="select-contact">
+           <p>CONTACT</p>
+          </router-link>
           </div>
         </div>
       </div>
