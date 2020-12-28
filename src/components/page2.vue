@@ -3,6 +3,57 @@
     <div class="container">
       <div class="l-search">
         <div class="l-main">
+          <div class="container">
+        <h3>フリーワード検索</h3>
+      <div class="t-c-search">
+        <form action="">
+          <input type="text" class="t-word-search" placeholder="" name="freeword">
+        </form>
+        <button type="submit" class="t-word-submit">検索</button>
+
+      </div>
+      <!-- <router-link to="/page3" class="router">DEATAIL</router-link> -->
+      <div class="t-other_search">
+        <div class="t-main">
+          <h3>カテゴリ検索</h3>
+          <ul class="t-m-category">
+            <li>
+              <a href="">フェス 初心者</a>
+            </li>
+            <li>
+              <a href="">ライブハウス 初心者</a>
+            </li>
+            <li>
+              <a href="">フェス 注意点</a>
+            </li>
+            <li>
+              <a href="">ツーステ</a>
+            </li>
+            <li>
+              <a href="">ROCKIN'ON JAPAN</a>
+            </li>
+            <li>
+              <a href="">日本の米は世界一</a>
+            </li>
+          </ul>
+        </div>
+        <div class="t-side">
+          <h3>「めっちゃE」ランキング検索</h3>
+          <ul class="t-s-search">
+            <li class="ranking_1">
+              <a href="#">【失敗しない！】初心者必見！フェスに持っていくもの10選！
+              </a>
+            </li>
+            <li class="ranking_2">
+              <a href="#"> 【これだけ気を付けよう！】フェスを楽しむための注意点3選！</a>
+            </li>
+            <li class="ranking_3">
+              <a href="#">【完全攻略！】初心者邦ロックロードマップ！</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
           <div class="l-result">  
             <h2>検索結果</h2>
             <!-- <p>「○○」の検索結果：<span class="l-result-num">5</span>件</p> -->
